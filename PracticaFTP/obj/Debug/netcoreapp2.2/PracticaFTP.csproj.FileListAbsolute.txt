@@ -9,3 +9,14 @@ C:\Users\AlephCK\Source\Repos\PracticaFTP\PracticaFTP\obj\Debug\netcoreapp2.2\Pr
 C:\Users\AlephCK\Source\Repos\PracticaFTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.pdb
 C:\Users\AlephCK\Source\Repos\PracticaFTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.dll
 C:\Users\AlephCK\Source\Repos\PracticaFTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.pdb
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.deps.json
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.runtimeconfig.json
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.runtimeconfig.dev.json
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.dll
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\bin\Debug\netcoreapp2.2\PracticaFTP.pdb
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.csprojAssemblyReference.cache
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.csproj.CoreCompileInputs.cache
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.AssemblyInfoInputs.cache
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.AssemblyInfo.cs
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.dll
+D:\Arianna\Arianna Linette Diaz\Visual Studio 2017\Projects\VecindarioFoodTruck\Practica7FTP\PracticaFTP\obj\Debug\netcoreapp2.2\PracticaFTP.pdb

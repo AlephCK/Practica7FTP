@@ -8,9 +8,14 @@ namespace PracticaFTP
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            
 
+            GenerarArchivo();
+            Console.WriteLine("archivo generado con exito");
+            Console.ReadKey();
 
             Chilkat.Global glob = new Chilkat.Global();
             bool successUnlock = glob.UnlockBundle("Anything for 30-day trial");
@@ -52,7 +57,7 @@ namespace PracticaFTP
                 }
 
                 // Upload a file.
-                string localPath = "c:/Dell Downloads/prueba.txt";
+                string localPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName) + @"\prueba.txt";
                 string remoteFilename = "prueba.txt";
 
                 success = ftp.PutFile(localPath, remoteFilename);
@@ -74,5 +79,27 @@ namespace PracticaFTP
 
 
         }
+
+
+
+        static void GenerarArchivo()
+        {
+            string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName) + @"\prueba.txt";
+            string[] lines = { "Winston Cruz", "Miguel Araujo", "Arianna Díaz" };
+            File.WriteAllLines(path, lines);
+
+            using (StreamWriter file = new StreamWriter(path))
+            {
+                foreach (string line in lines)
+                {
+                    file.WriteLine(line);
+
+                }
+
+
+            }
+
+        }
     }
 }
+
