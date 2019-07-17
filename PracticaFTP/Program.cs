@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Bogus;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text;
 
@@ -81,19 +84,42 @@ namespace PracticaFTP
         }
 
 
-
+       
         static void GenerarArchivo()
         {
+            string digitos = "0123456789";
+            string digitos2 = "abcdefghijklmnñopqrstuwxyz";
+            List<ClienteSeguro> clientes = new List<ClienteSeguro>();
+
+            for (int i = 0; i< 50; i++) {
+
+                var clienteSeguro = new Faker<ClienteSeguro>()
+                .RuleFor(e => e.Cedula, f => f.Random.String2(11, digitos))
+                .RuleFor(e => e.Nombre, f => f.Name.FirstName())
+                .RuleFor(e => e.Apellido, f => f.Name.LastName())
+                .RuleFor(e => e.Edad, f => f.Random.Number(18, 50))
+                .RuleFor(e => e.Fecha_Ingreso, f => f.Date.Recent(100))
+                .RuleFor(e => e.Tipo_Seguro, f => f.Random.String2(5, digitos2))
+                .RuleFor(e => e.Estado, f => f.Random.String2(5, digitos2));
+
+                clientes.Add(clienteSeguro.Generate());
+
+            }
+
             string path = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName) + @"\prueba.txt";
-            string[] lines = { "Winston Cruz", "Miguel Araujo", "Arianna Díaz" };
-            File.WriteAllLines(path, lines);
 
             using (StreamWriter file = new StreamWriter(path))
             {
-                foreach (string line in lines)
-                {
-                    file.WriteLine(line);
+                string encabezado = $" Nombre | Apellido | Cédula | Edad | Fecha Ingreso | Tipo Seguro | Estado";
+                file.WriteLine(encabezado);
 
+                foreach (var clients in clientes)
+                {
+                    string client = $"{clients.Nombre}|{clients.Apellido}|{clients.Cedula}| {clients.Edad} | {clients.Fecha_Ingreso} | " +
+                        $" {clients.Tipo_Seguro} | {clients.Estado}";
+
+                    file.WriteLine(client);
+                   
                 }
 
 

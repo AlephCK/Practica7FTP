@@ -1,17 +1,26 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "1f7e2f71d0c4df5584d8ca82a26267d888b15e19"
+    "signature": "6d89db9781d1ad8272a53d3ca46a3a8fefb6c30d"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.2": {
       "PracticaFTP/1.0.0": {
         "dependencies": {
+          "Bogus": "28.0.2",
           "ChilkatDnCore": "9.5.0.78"
         },
         "runtime": {
           "PracticaFTP.dll": {}
+        }
+      },
+      "Bogus/28.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {
+            "assemblyVersion": "28.0.2.0",
+            "fileVersion": "28.0.2.0"
+          }
         }
       },
       "ChilkatDnCore/9.5.0.78": {
@@ -56,6 +65,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bogus/28.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uObDJgJwbt7N3bq3LDQMQb7BTaOCN1GiSnGkveFWq4+pdGMs8U+AoGsdKecXfiKHeWJvlET2GtZ3pFbcwSC2XQ==",
+      "path": "bogus/28.0.2",
+      "hashPath": "bogus.28.0.2.nupkg.sha512"
     },
     "ChilkatDnCore/9.5.0.78": {
       "type": "package",

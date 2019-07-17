@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "Bogus/28.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Bogus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Bogus.dll": {}
+        }
+      },
       "ChilkatDnCore/9.5.0.78": {
         "type": "package",
         "dependencies": {
@@ -245,6 +254,26 @@
     }
   },
   "libraries": {
+    "Bogus/28.0.2": {
+      "sha512": "uObDJgJwbt7N3bq3LDQMQb7BTaOCN1GiSnGkveFWq4+pdGMs8U+AoGsdKecXfiKHeWJvlET2GtZ3pFbcwSC2XQ==",
+      "type": "package",
+      "path": "bogus/28.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bogus.28.0.2.nupkg.sha512",
+        "bogus.nuspec",
+        "lib/net40/Bogus.dll",
+        "lib/net40/Bogus.pdb",
+        "lib/net40/Bogus.xml",
+        "lib/netstandard1.3/Bogus.dll",
+        "lib/netstandard1.3/Bogus.pdb",
+        "lib/netstandard1.3/Bogus.xml",
+        "lib/netstandard2.0/Bogus.dll",
+        "lib/netstandard2.0/Bogus.pdb",
+        "lib/netstandard2.0/Bogus.xml"
+      ]
+    },
     "ChilkatDnCore/9.5.0.78": {
       "sha512": "oFN/bPnagICaj289l0toLNdN5HcDDfVUzbHjIIBw23WqSI3nMLUjrOyWbuZOTevn6jvd0W0IsXrxnM1VDF7YsA==",
       "type": "package",
@@ -744,6 +773,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Bogus >= 28.0.2",
       "ChilkatDnCore >= 9.5.0.78",
       "Microsoft.NETCore.App >= 2.2.0"
     ]
@@ -789,6 +819,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "Bogus": {
+            "target": "Package",
+            "version": "[28.0.2, )"
+          },
           "ChilkatDnCore": {
             "target": "Package",
             "version": "[9.5.0.78, )"
